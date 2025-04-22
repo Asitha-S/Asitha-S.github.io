@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - FurBound</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><i class="fas fa-paw"></i> FurBound</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html" class="active">Adopt a Pet</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="form-section">
+        <div class="container">
+            <h1>Adoption Application</h1>
+            <p class="form-intro">We’re excited you’re considering adoption! Please fill out this form to help us get to know you better.</p>
+
+            <form id="adoptionForm" class="donation-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                    <span class="error-message" id="cityError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State *</label>
+                    <input type="text" id="state" name="state" required>
+                    <span class="error-message" id="stateError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="petName">Name of the Pet You Wish to Adopt *</label>
+                    <input type="text" id="petName" name="petName" required>
+                    <span class="error-message" id="petNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="homeType">Which best describes your home? *</label>
+                    <select id="homeType" name="homeType" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="townhouse">Townhouse</option>
+                    </select>
+                    <span class="error-message" id="homeTypeError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="kids">Do you have children living in your household? *</label>
+                    <select id="kids" name="kids" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <span class="error-message" id="kidsError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentPets">Do you have any other pets? *</label>
+                    <select id="currentPets" name="currentPets" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <span class="error-message" id="currentPetsError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why do you want to adopt a pet? *</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+                    <span class="error-message" id="reasonError"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the terms and conditions *</label>
+                    <span class="error-message" id="agreeTermsError"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Submit Application</button>
+                    <button type="button" class="btn reset-btn" id="resetForm">Reset Form</button>
+                </div>
+            </form>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3><i class="fas fa-paw"></i> FurBound</h3>
+                <p>Connecting loving homes with pets in need since 2024</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Adopt a Pet</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Chennai, India</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@furbound.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FurBound. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
